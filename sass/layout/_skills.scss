@@ -1,0 +1,41 @@
+/*Чем мы занимаемся*/
+.skills {
+  padding-top: 0;
+}
+.skills__list {
+  display: flex;
+  justify-content: space-between;
+}
+.skills__header {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+.skills__item:not(:last-child) {
+  margin-right: 30px;
+}
+.skills__item {
+  position: relative;
+}
+.skills__label {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--button-letters-active);
+  background: rgba(47, 48, 58, 0.8);
+}

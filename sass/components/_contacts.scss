@@ -1,0 +1,41 @@
+/* Контакты-ссылки почта и телефон */
+.contacts {
+  display: flex;
+  margin-left: auto;
+}
+.contacts__item:not(:last-child) {
+  margin-right: 50px;
+}
+.contacts__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--accent-color);
+  }
+
+  &:hover .contacts__envelope,
+  &:focus .contacts__envelope,
+  &:hover .contacts__smartphone,
+  &:focus .contacts__smartphone {
+    fill: currentColor;
+  }
+}
+.contacts__envelope,
+.contacts__smartphone {
+  fill: var(--primary-text-color);
+  margin-right: 10px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

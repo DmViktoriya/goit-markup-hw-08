@@ -1,0 +1,40 @@
+/* Особенности */
+.feature__list {
+  display: flex;
+  text-decoration: none;
+}
+.feature-item:not(:last-child) {
+  margin-right: 30px;
+}
+.feature-item__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+.feature-item__description {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  margin: 0;
+}
+.feature-item__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-bg-color);
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.feature-item__icon {
+  fill: var(--title-text-color);
+  width: 70px;
+  height: 70px;
+}
