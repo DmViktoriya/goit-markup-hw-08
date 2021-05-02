@@ -500,7 +500,7 @@ p {
 
 /*Социальные сети*/
 .social-icons {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
 }
 
@@ -890,7 +890,7 @@ p {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .feature-item__box {
     max-width: 354px;
   }
@@ -984,21 +984,54 @@ p {
 
 .team__list {
   display: flex;
-  margin: 0 auto;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
 }
 
 .team__item {
-  padding: 0 auto 30px;
-  margin-left: 0;
+  flex-basis: calc((100% - 30px * var(--grid__item)) / var(--grid__item));
+  margin-top: 30px;
+  margin-left: 30px;
+  --grid__item: 1;
 }
 
-.team__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .team__item {
+    --grid__item: 2;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__item {
+    --grid__item: 4;
+  }
 }
 
 .team__card {
   padding: 0;
   margin: 0;
+}
+
+@media screen and (min-width: 480px) {
+  .team__card {
+    max-width: 450px;
+    max-height: 460px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team__card {
+    max-width: 354px;
+    max-height: 374px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__card {
+    max-width: 270px;
+    max-height: 260px;
+  }
 }
 
 .team__name {
@@ -1031,6 +1064,24 @@ p {
   background-color: var(--hero-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+@media screen and (min-width: 480px) {
+  .team__box {
+    max-width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team__box {
+    max-width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__box {
+    max-width: 270px;
+  }
 }
 
 /*Постоянные клиенты*/
