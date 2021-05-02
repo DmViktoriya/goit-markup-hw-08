@@ -474,6 +474,7 @@ p {
 }
 
 .page {
+  position: relative;
   border-bottom: 1px solid #ececec;
 }
 
@@ -512,6 +513,60 @@ p {
   background-color: var(--accent-color);
   border-radius: 4px;
   bottom: -1px;
+}
+
+.menu-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  z-index: 100;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+/*@media screen and (max-width: 767px) {
+  .navigation__list {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contacts {
+    display: none;
+  }
+}*/
+.menu-container {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 90;
+  width: 100%;
+  max-width: 480px;
+  height: 796px;
+  background-color: orange;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.menu-container.is-open {
+  display: none;
 }
 
 /*Социальные сети*/
@@ -579,6 +634,12 @@ p {
 .contacts {
   display: flex;
   margin-left: auto;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1119px) {
+  .contacts {
+    flex-direction: column;
+  }
 }
 
 .contacts__item:not(:last-child) {
