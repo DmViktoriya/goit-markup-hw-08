@@ -39,3 +39,7 @@ p {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
+body.modal-open {
+  overflow: hidden;
+}
