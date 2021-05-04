@@ -2,17 +2,17 @@
 .footer {
   background-color: var(--footer-bg);
   padding-top: 60px;
-  padding-bottom: 60px;
-  height: 603px;
+  /*padding-bottom: 60px;*/
+  /*height: 603px;*/
 
   @media screen and (min-width: 768px) {
     max-width: 100%;
-    height: 463px;
+    /*height: 463px;*/
   }
 
   @media screen and (min-width: 1200px) {
-    max-width: 1600px;
-    height: 252px;
+    max-width: 100%;
+    /*height: 252px;*/
   }
 }
 .footer__address {
@@ -28,7 +28,6 @@
 .footer__contact {
   display: flex;
   justify-content: center;
-  margin-bottom: 60px;
   text-decoration: none;
   font-style: normal;
   font-size: 14px;
@@ -97,7 +96,7 @@
 }
 .footer-subscribe__mail {
   width: 450px;
-  height: 50px;
+  height: 58px;
   padding: 15px 16px;
   margin-bottom: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -135,4 +134,5 @@
   color: #ffffff;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 60px;
 }
